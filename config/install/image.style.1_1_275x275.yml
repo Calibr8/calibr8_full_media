@@ -1,0 +1,22 @@
+uuid: a140df2a-45c5-4afe-8322-c42db20bd200
+langcode: nl
+status: true
+dependencies:
+  module:
+    - crop
+name: 1_1_275x275
+label: '1:1 275x275'
+effects:
+  a7a35da7-81ab-47ad-9ec1-e612010e4d16:
+    uuid: a7a35da7-81ab-47ad-9ec1-e612010e4d16
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 1_1_crop
+  e3b90f5f-965d-424c-a137-31107d14e68e:
+    uuid: e3b90f5f-965d-424c-a137-31107d14e68e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 275
+      height: 275

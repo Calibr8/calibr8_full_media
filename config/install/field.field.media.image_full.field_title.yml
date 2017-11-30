@@ -1,0 +1,19 @@
+uuid: 4f1ac761-cbae-4834-b768-364e768c6213
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_title
+    - media_entity.bundle.image_full
+id: media.image_full.field_title
+field_name: field_title
+entity_type: media
+bundle: image_full
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

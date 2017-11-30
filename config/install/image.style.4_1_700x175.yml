@@ -1,0 +1,22 @@
+uuid: 93b407ab-e68a-4703-93df-2867e1ddf0ea
+langcode: nl
+status: true
+dependencies:
+  module:
+    - crop
+name: 4_1_700x175
+label: '4:1 700x175'
+effects:
+  ff9a39fd-9c9f-4f3a-97ba-0e5defa5b290:
+    uuid: ff9a39fd-9c9f-4f3a-97ba-0e5defa5b290
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 4_1_crop
+  8260ee7a-ea91-43da-b4bb-be32caffd130:
+    uuid: 8260ee7a-ea91-43da-b4bb-be32caffd130
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 700
+      height: 175

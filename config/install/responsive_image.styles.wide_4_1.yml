@@ -1,0 +1,25 @@
+uuid: cdf9fc86-8b97-4130-bddf-9adb6a77da8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.4_1_1200x300
+    - image.style.4_1_1400x350
+    - image.style.4_1_700x175
+  theme:
+    - calibr8_subtheme
+id: wide_4_1
+label: 'Wide 4:1'
+image_style_mappings:
+  -
+    breakpoint_id: calibr8_subtheme.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 4_1_1400x350
+  -
+    breakpoint_id: calibr8_subtheme.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 4_1_1200x300
+breakpoint_group: calibr8_subtheme
+fallback_image_style: 4_1_700x175

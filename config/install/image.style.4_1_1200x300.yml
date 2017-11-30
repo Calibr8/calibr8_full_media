@@ -1,0 +1,22 @@
+uuid: 77e69a91-d5e0-4433-a4dc-8233bd782837
+langcode: nl
+status: true
+dependencies:
+  module:
+    - crop
+name: 4_1_1200x300
+label: '4:1 1200x300'
+effects:
+  31648dfb-a10c-472f-a053-06171273f151:
+    uuid: 31648dfb-a10c-472f-a053-06171273f151
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1200
+      height: 300
+  e176a59c-1ab1-4b4f-8266-27739508ff1e:
+    uuid: e176a59c-1ab1-4b4f-8266-27739508ff1e
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: 4_1_crop

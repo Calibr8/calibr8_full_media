@@ -1,0 +1,12 @@
+uuid: 24794c8a-3759-4071-afac-a8699d67509c
+langcode: nl
+status: true
+dependencies: {  }
+label: '4:1 Crop'
+id: 4_1_crop
+description: ''
+aspect_ratio: '4:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

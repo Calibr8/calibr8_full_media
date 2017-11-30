@@ -1,0 +1,12 @@
+uuid: 7d9ba4b5-de54-49ac-b895-fdec45117152
+langcode: nl
+status: true
+dependencies: {  }
+label: '3:1 crop'
+id: 3_1_crop
+description: ''
+aspect_ratio: '3:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

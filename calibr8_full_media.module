@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function calibr8_full_media_entity_extra_field_info() {
+  $extra = array();
+ 
+  $extra['media']['image_full']['form']['image_preview'] = array(
+    'label' => t('Image preview'),
+    'weight' => 100,
+    'visible' => TRUE,
+  );
+ 
+  return $extra;
+}
+
+/*
+ * Implements hook_form_alter().
+ */
+function calibr8_full_media_form_alter(&$form, &$form_state, $form_id) {
+
+  // alter media forms
+  if ($form_id == 'media_image_full_edit_form') {
+  	$form['image_preview']['#markup'] = 'test';
+  	$entity = $form_state->getFormObject()->getEntity();
+  	$view_builder = \Drupal::entityTypeManager()->getViewBuilder('media');
+  	$form['image_preview'] = $view_builder->view($entity, 'default');
+  }
+
+}
+

@@ -1,0 +1,117 @@
+uuid: db09bc9f-0d7f-430e-ac6b-43e9108e744e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image_full.field_alt
+    - field.field.media.image_full.field_caption
+    - field.field.media.image_full.field_media_image
+    - field.field.media.image_full.field_title
+    - media_entity.bundle.image_full
+  module:
+    - field_group
+    - image_widget_crop
+    - maxlength
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_data
+        - group_crop
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_crop:
+      children:
+        - field_media_image
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Crop
+    group_data:
+      children:
+        - field_alt
+        - field_title
+        - field_caption
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Data
+id: media.image_full.default
+targetEntityType: media
+bundle: image_full
+mode: default
+content:
+  field_alt:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_caption:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 140
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+    type: string_textarea
+    region: content
+  field_media_image:
+    weight: 0
+    settings:
+      show_crop_area: true
+      show_default_crop: true
+      preview_image_style: ''
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - 1_1_crop
+        - 2_1_crop
+        - 3_1_crop
+        - 4_1_crop
+      progress_indicator: throbber
+      warn_multiple_usages: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  image_preview:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  name: true
+  path: true
+  uid: true

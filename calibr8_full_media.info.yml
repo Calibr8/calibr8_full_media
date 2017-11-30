@@ -1,0 +1,17 @@
+name: Calibr8 FUll Media
+description: Feature enabling a full media setup. This module is intended as a playground for testing media configuration
+package: Calibr8
+type: module
+core: 8.x
+version: '8.x-4.1.0'
+dependencies:
+  - crop
+  - file
+  - image
+  - responsive_image
+  - media_entity
+  - media_entity_image
+  - image_widget_crop
+  - field_formatter
+  - entity_browser
+  - dropzonejs_eb_widget

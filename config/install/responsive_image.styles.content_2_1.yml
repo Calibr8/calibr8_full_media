@@ -1,0 +1,19 @@
+uuid: 1823e091-21a2-4411-965b-2ebbba2316e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.2_1_400x200
+    - image.style.2_1_700x350
+  theme:
+    - calibr8_subtheme
+id: content_2_1
+label: 'Content 2:1'
+image_style_mappings:
+  -
+    breakpoint_id: calibr8_subtheme.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 2_1_700x350
+breakpoint_group: calibr8_subtheme
+fallback_image_style: 2_1_400x200

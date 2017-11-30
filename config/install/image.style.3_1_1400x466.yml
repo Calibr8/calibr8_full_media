@@ -1,0 +1,22 @@
+uuid: f23f8656-9e95-4d4d-87d9-f8815503368e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - crop
+name: 3_1_1400x466
+label: '3:1 1400x466'
+effects:
+  a665e730-859c-4bc2-85b9-aef71c42b2ee:
+    uuid: a665e730-859c-4bc2-85b9-aef71c42b2ee
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3_1_crop
+  e4357c75-f085-41fe-b207-56c0a72570da:
+    uuid: e4357c75-f085-41fe-b207-56c0a72570da
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1400
+      height: 466

@@ -1,0 +1,22 @@
+uuid: 528ec34e-92ac-4f65-a25d-3baf557dc2e1
+langcode: nl
+status: true
+dependencies:
+  module:
+    - crop
+name: 3_1_399x133
+label: '3:1 399x133'
+effects:
+  7204ff8b-cbe4-48ed-b2d5-4c23ef08fc18:
+    uuid: 7204ff8b-cbe4-48ed-b2d5-4c23ef08fc18
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: 3_1_crop
+  c8bda58c-018e-49fb-98fc-7b546899ce62:
+    uuid: c8bda58c-018e-49fb-98fc-7b546899ce62
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 399
+      height: 133

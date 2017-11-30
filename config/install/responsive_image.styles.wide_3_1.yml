@@ -1,0 +1,31 @@
+uuid: 6c52e656-44e2-48ca-aca9-9fe9e9f4546d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.3_1_1200x400
+    - image.style.3_1_1400x466
+    - image.style.3_1_399x133
+    - image.style.3_1_699x233
+  theme:
+    - calibr8_subtheme
+id: wide_3_1
+label: 'Wide 3:1'
+image_style_mappings:
+  -
+    breakpoint_id: calibr8_subtheme.xl
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 3_1_1400x466
+  -
+    breakpoint_id: calibr8_subtheme.md
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 3_1_1200x400
+  -
+    breakpoint_id: calibr8_subtheme.sm
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 3_1_699x233
+breakpoint_group: calibr8_subtheme
+fallback_image_style: 3_1_399x133
